@@ -1,6 +1,6 @@
 ﻿//Programmer: Shay Deshner
 //Date: 4/04/2018
-//The pattern for this program was based on a stackoverflow post by Charles Magar
+//The pattern for this program was partly based on a stackoverflow post by Charles Magar
 //https://stackoverflow.com/questions/32215108/how-to-read-a-hierarchical-xml-with-linq-and-print-the-result-that-can-indicate
 
 using System;
@@ -79,7 +79,7 @@ namespace XML_Recursion
 
             foreach (var node in result)
             {
-                //if a path value matches the input or a parent has a child that mathes mark a active
+                //if a path value matches the input or a parent has a child that mathes mark as active
                 if (path == node.PathValue || node.Children.Any(i => i.PathValue == path)) {
                     Console.Write(new string(' ', depth * 3));
                     Console.WriteLine(node.DisPlayName + ", " + node.PathValue + " ACTIVE");
