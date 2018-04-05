@@ -79,7 +79,7 @@ namespace XML_Recursion
 
             foreach (var node in result)
             {
-                //if a path value matches the input or a parent has a child that mathes mark as active
+                //if a path value matches the input or a parent has a child that matches mark as active
                 if (path == node.PathValue || node.Children.Any(i => i.PathValue == path)) {
                     Console.Write(new string(' ', depth * 3));
                     Console.WriteLine(node.DisPlayName + ", " + node.PathValue + " ACTIVE");
