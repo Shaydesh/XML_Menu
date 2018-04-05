@@ -4,17 +4,10 @@
 //https://stackoverflow.com/questions/32215108/how-to-read-a-hierarchical-xml-with-linq-and-print-the-result-that-can-indicate
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Xml;
 using System.Xml.Linq;
-using System.Xml.Serialization;
-using System.Xml.XPath;
 
 namespace XML_Recursion
 {
