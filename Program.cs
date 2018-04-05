@@ -16,7 +16,7 @@ namespace XML_Recursion
         static void Main(string[] args)
         {
             //test to make sure exactly two arguments have been passed to the application
-            if (args.Length < 2 || args.Length > 2)
+            if (args.Length != 2)
             {
                 Console.WriteLine("This console application Accepts two arguments: first, a path to a menu .xml file (e.g. \"c:\\schedaeromenu.xml\"); second an active path to match (e.g. \"/default.aspx\") ");
             }
